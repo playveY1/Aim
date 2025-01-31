@@ -1,0 +1,106 @@
+:root{
+    --main-color:#b77b7b;
+  }  
+  
+  *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: var(--main-color);
+  position: relative;
+
+    }
+    .container{
+      max-width: 1530px;
+      margin: 0 auto;
+     position: relative;
+    }
+    .nav__panel{
+        margin-top: 20px;
+        display: flex;
+     align-items: center;
+    justify-content: space-around;
+    }
+    .title__aim{
+        font-size: 35px;
+    }
+    .text__score{
+        font-size: 25px;
+    }
+    .time__counter{
+        font-size: 25px;
+
+    }
+
+    /*aim zone*/
+    .circle3{
+        cursor: pointer;
+        width: 70px;
+        background-color: red;
+        height: 70px;
+        border-radius: 50%;
+    }
+     .circle3.active{
+        display: none;
+            }
+    .circle2{
+        cursor: pointer;
+        width: 50px;
+        background-color: red;
+        height: 50px;
+        border-radius: 50%;
+    }
+     .circle2.active{
+        display: none;
+            }
+    .circle1{
+        cursor: pointer;
+        width: 60px;
+        background-color: red;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .circle1.active{
+display: none;
+    }
+   
+
+    .window__stop{
+        margin: 0 auto;
+        
+        margin-top: 10%;
+        border-radius: 20px;
+        width: 500px;
+        height: 300px;
+        background-color: rgb(251, 226, 226);
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        display: none;
+    }
+    .window__stop.active{
+        display: flex;
+    }
+    .window__stop-title{
+text-align: center;
+font-size: 25px;
+    }
+    .window__stop-text{
+        text-align: center;
+        padding-top: 50px;
+    }
+    .return__btn{
+        width: 150px;
+        height: 50px;   
+        background-color: brown;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        border: 2px solid black;
+    }
